@@ -22,6 +22,7 @@ function lib.getNearbyPlayers(coords, maxDistance, includePlayer)
                     id = playerId,
                     ped = playerPed,
                     coords = playerCoords,
+                    source = GetPlayerServerId(playerId)
                 }
             end
         end
