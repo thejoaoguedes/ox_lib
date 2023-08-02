@@ -90,6 +90,12 @@ function math.tohex(n, upper)
     return formatString:format(n)
 end
 
+---Formats a number as a integer.
+---@param n number
+function math.toint(n)
+    return n < 0 and -n or n
+end
+
 ---Converts input number into grouped digits
 ---@param number number
 ---@param seperator? string
